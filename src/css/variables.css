@@ -1,0 +1,9 @@
+:root {
+    --mobile-width: 375px;
+    --desktop-width: 1440px;
+
+    --violet-color: hsl(257, 40%, 49%);
+    --soft-magenta-color: hsl(300, 69%, 71%);
+
+    
+}
