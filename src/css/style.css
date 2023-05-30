@@ -8,6 +8,7 @@
         background-image: url(/src/images/bg-mobile.svg);
         background-position: top;
         background-repeat: no-repeat;
+        background-size: contain;
     }
     
     header {
@@ -130,4 +131,38 @@ footer {
 
 footer img:not(:first-child){
     margin-left: 10px;
+}
+
+@media (min-width: 1024px) {
+
+    .header-main-wrapper {
+        display: flex;
+        align-items: center;
+    }
+    
+    header {
+        margin-left: 150px;
+    }
+    
+    header .logo{
+        max-width: 240px;
+        margin-top: 40px;
+        margin-bottom: 53px;
+    }
+
+    body {
+        max-width: 100vh;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        
+        background-image: url(/src/images/bg-desktop.svg);
+        background-position: top;   
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
 }
