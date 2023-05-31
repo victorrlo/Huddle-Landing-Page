@@ -135,13 +135,20 @@ footer img:not(:first-child){
 
 @media (min-width: 1024px) {
 
+    body {
+        /* padding: 20px 0px 20px 0px; */
+        background-image: url(/src/images/bg-desktop.svg);
+        background-position: top;   
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        text-align: justify;
+    }
+
     .header-main-wrapper {
         display: flex;
         align-items: center;
-    }
-    
-    header {
-        margin-left: 150px;
     }
     
     header .logo{
@@ -150,19 +157,38 @@ footer img:not(:first-child){
         margin-bottom: 53px;
     }
 
-    body {
-        max-width: 100vh;
-        padding: 30px;
+    header .huddle-mockup {
+        height: auto;
+        max-width: 50vw;
+    }
+
+    .header-main-wrapper {
+        padding: 0 3vh 0 3vh;
         display: flex;
         justify-content: center;
         align-items: center; 
-        
-        background-image: url(/src/images/bg-desktop.svg);
-        background-position: top;   
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
+    }
+
+    main {
+        text-align: left;
+        font-size: 1.8vw;
+        padding-top: 13vw;
+    }
+
+    main h5 {
+        font-size: 1.8vh;
+    }
+
+    button {
+        /* display: block; */
+        block-size: 5vh;
+        font-size: 1.8vh;
+    }
+
+    footer {
+        display: flex;
+        align-items: end;
+        margin-top: auto;
     }
 
 }
